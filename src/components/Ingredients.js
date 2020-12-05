@@ -19,8 +19,8 @@ const Ingredients = () => {
   return (
     <div>
       <p>Pizza</p>
-      {products.map((item, index) => (
-        <Checkbox label={item} key={index} />
+      {products.map((item) => (
+        <Checkbox label={item} key={item} />
       ))}
       {counter > 5 && <p>Please, choose only 5 ingredients!</p>}
     </div>
